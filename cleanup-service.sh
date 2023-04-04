@@ -9,7 +9,7 @@ SERVICE_NAME="pwnagotchi-cleanup"
 echo "[+] Creating cleanup script"
 sudo tee $SCRIPT_PATH > /dev/null << EOF
 #!/bin/bash
-if [ \$(du -s /var/tmp/pwnagotchi | awk '{print \$1}') -gt 1000 ]; then
+if [ \$(du -s /var/tmp/pwnagotchi | awk '{print \$1}') -gt 9000 ]; then
     rm -rf /var/tmp/pwnagotchi/*
 fi
 EOF
