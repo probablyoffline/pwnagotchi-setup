@@ -15,7 +15,7 @@ sudo chmod +x /home/pi/route.sh
 
 # Create a systemd service unit file
 echo "[+] Creating service"
-sudo tee /etc/systemd/system/add-routes.service > /dev/null <<EOT
+sudo tee /etc/systemd/system/default-routes.service > /dev/null <<EOT
 [Unit]
 Description=Add default route
 
